@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+  
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 30px;
+}
+  
+.donate-box {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+  
+.progress {
+    height: 100%;
+    width: 40%; /* Initial width to 40% */
+    background-color: #5bc0de;
+    border-radius: 5px;
+    animation: progressAnimation 3s ease-in-out;
+}
+
+.amount-raised {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+  
+.current-amount {
+    font-weight: bold;
+}
+
+.donate-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-size: 18px;
+    color: #777;
+}
+  
+input {
+    width: 80px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.donate-btn {
+    background-color: #5bc0de;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.donate-btn:hover {
+    background-color: #2b9db3;
+}
+  
+@keyframes progressAnimation {
+    0% {
+        width: 0;
+    }
+}
+  
