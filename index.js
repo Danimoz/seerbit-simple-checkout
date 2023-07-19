@@ -8,10 +8,9 @@ function paywithSeerbit() {
     "amount": getAmount(),
     "email": "test@emaildomain.com",
     //optional field. Set to true to allow customer set the amount
-    "setAmountByCustomer": false,
+    "setAmountByCustomer": true,
     "full_name": "John Doe", //optional
     "tokenize" : false, // set to true to allow token capture
-    "planId" : "123456abcd", // subcription plan id.
     "callbackurl": "http://yourdomain.com",
     },
     function callback(response, closeModal) {
